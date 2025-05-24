@@ -20,4 +20,6 @@ query_job = client.query("""
 results = query_job.result() # Wait for the job to complete.
 data = query_job.to_dataframe()
 print(data.head(2))
+
+
 data.to_csv('train_data.csv', index=False)
